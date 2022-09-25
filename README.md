@@ -2,7 +2,7 @@
 Java Program to Make a Simple Calculator
 import java.util.Scanner;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-import java.util.*;
+import java.util.Scanner;
 class MainRunner {
   public static void main(String[] args) {      
     Scanner sc = new Scanner(System.in); // create an object of Scanner class  
@@ -10,9 +10,9 @@ class MainRunner {
     char op= sc.next().charAt(0);
     
     System.out.println("Enter first number"); // ask users to enter numbers
-      Double n1 = input.nextDouble();
+      Double n1 = sc.nextDouble();
     System.out.println("Enter second number");
-      Double n2 = input.nextDouble();
+      Double n2 = sc.nextDouble();
     
       Double result;
     switch (op) {
@@ -41,6 +41,6 @@ class MainRunner {
         break;
     }
 
-    input.close();
+    sc.close();
   }
 }
