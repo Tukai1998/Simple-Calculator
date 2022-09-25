@@ -2,9 +2,9 @@
 Java Program to Make a Simple Calculator
 import java.util.Scanner;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
 class MainRunner {
-  public static void main(String[] args) {
-        
+  public static void main(String[] args) {      
     Scanner sc = new Scanner(System.in); // create an object of Scanner class  
     System.out.println("Choose an operator: +, -, *, or /");  // ask users to enter operator
     char op= sc.next().charAt(0);
